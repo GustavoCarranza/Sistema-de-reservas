@@ -1,0 +1,138 @@
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url('../img/login.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+   
+}
+/*Estilos de formulario*/
+.contenedor{
+    background:rgb(255,255,255,.7);
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 450px;
+    height: 500px;
+    border-radius: 15px;
+}
+.contenedor h1{
+    text-align: center;
+    padding: 0 0 30px 0;
+    border-bottom: 1px solid #000;
+}
+.contenedor form{
+    padding: 30px 50px;
+    box-sizing: border-box;
+}
+form .input{
+    position: relative;
+    margin: 25px 0;
+}
+.input input{
+    width: 100%;
+    padding: 0px 45px ;
+    height: 50px;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius:10px;
+}
+.input label{
+    position: absolute;
+    top: -50%;
+    left: 5px;
+    color: #000000;
+    transform: translateY(-50%);
+    font-size: 20px;
+    pointer-events: none;
+    transition: .8s;
+}
+.input i{
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    padding: 15px 5px 10px 0;
+    font-size: 25px;
+    color: #585858;
+    border-right: 1px solid #818181;
+}
+.btn_login{
+    background: rgb(80, 80, 80);
+    width: 100%;
+    height: 60px;
+    border: none;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 20px;
+    transition: .6s;
+}
+.btn_login:hover{
+    background: rgb(129, 129, 129);
+    transform: translateY(-15px);
+}
+/*Fin des estilos */
+
+/*Estilos de footer*/
+footer{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color:rgba(0, 0, 0, 0.6);
+    height: auto;
+    width: 100vw;
+    font-family: "Open Sans";
+    color: #fff;
+  }
+  .contenido_footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+  }
+  .contenido_footer h3{
+    font-size: 1.5rem;
+    font-weight: 300;
+    text-transform: capitalize;
+    line-height: 4rem;
+  }
+  .contenido_footer p{
+    padding: 5px;
+    font-size: 15px;
+    text-transform: capitalize;
+    text-align: center;
+  }
+
+  /*Responsive*/
+
+  @media (max-width:500px){
+    .contenedor{
+    width: 370px;
+    height: 520px;
+    }
+    .btn_login{
+    height: 50px;
+    }
+    .input input{
+    height: 40px;
+    }
+    .contenido_footer h3{
+    font-size: 1.1rem;
+    line-height: 2rem;
+    }
+    .input i{
+    position: absolute;
+    top: 1%;
+    left: 5px;
+    padding: 5px 5px 10px 0;
+    font-size: 25px;
+    color: #585858;
+    border-right: 1px solid #818181;
+}
+  }
