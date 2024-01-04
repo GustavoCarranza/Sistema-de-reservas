@@ -80,7 +80,10 @@
   <div class="modal-dialog modal-dialog-centered modal-xl">
     <div class="modal-content">
       <div class="modal-header">
-        <h5 class="modal-title" id="staticBackdropLabel"><i class="bx bx-plus"></i> Editar información usuario</h5>
+        <h5 class="modal-title" id="staticBackdropLabel"><i class="bx bx-plus"></i> Editar información usuario con el rol de: </h5>
+        <div class="contenido_nombre">
+        <input type="text" class="nombre_input" id="nombres" disabled>
+        </div>
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">

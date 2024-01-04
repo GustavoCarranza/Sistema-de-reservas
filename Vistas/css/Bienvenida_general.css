@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+  }
+
+body{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(../img/fondo_bienvenida.jpg);
+    background-size:cover;
+    background-attachment: fixed;
+}
+.contenido_header{
+    display: flex;
+    justify-content: end;   
+}
+.contenido_header a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 500;
+    font-style: italic;
+    letter-spacing: 0.3rem;
+    transition: .6S;
+}
+.contenido_header a:hover{
+    transform: translateX(-20px);
+}
+.contenido_header .name_user{
+    margin: 10px;
+}
+.contenido_header .name_user span{
+    font-size: 1.6rem;
+}
+.contenido_header .name_user img{
+    width: 100px;
+    border-radius: 50%;
+}
+
+/*Estilos de reloj digital */
+.contenido{
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+  .seccion {
+    font-family: 'DS-Digital', sans-serif;
+    color: #000;
+    text-align: center;
+  }
+  .fecha {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    margin: 1rem 0rem;
+    font-size: 3.3rem;
+    letter-spacing: 0.5rem;
+  }
+  .horario {
+    background-color: rgba(255, 255, 255, 0.6);
+    padding: 20px;
+    font-size: 3.3rem;
+    letter-spacing: 1.5rem;
+    font-weight: bold;
+  }
+  small{
+    font-size: 3rem;
+    letter-spacing: 0.5rem;
+  }
+
+/*Estilos de href*/
+.contenedor_botones{
+    display: grid;
+    place-content: center;
+    grid-template-columns:1fr 1fr 1fr;
+    margin: 5rem 30rem 5rem 30rem ;
+    gap: 35px;
+}
+.contenedor_botones .link,
+.contenedor_botones .link button{
+    border: none;
+    border-radius: 10px;
+    padding:40px;
+    color: #fff;
+    text-align: center;
+    text-decoration: none;
+    font-size: 25px;
+    cursor: pointer;
+    transition: .5s;
+}
+.contenedor_botones .restaurantes,
+.contenedor_botones .eventos,
+.contenedor_botones .destinations,
+.contenedor_botones .usuarios,
+.contenedor_botones .graficos,
+.contenedor_botones .graficos2{
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.contenedor_botones .restaurantes{
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/restaurantes.jpg);
+}
+.contenedor_botones .eventos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/eventoss.jpg);
+}
+.contenedor_botones .destinations{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/dining.jpg);
+}
+.contenedor_botones .usuarios{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/usuarios.jpg);
+}
+.contenedor_botones .graficos{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/graficos.jpg);
+}
+.contenedor_botones .graficos2{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/graficos2.jpg);
+}
+.contenedor_botones .titulos_href{
+    font-weight: bolder;
+    letter-spacing: 5px;
+}
+.contenedor_botones .link:hover{
+    transform: translateY(-20px);
+    transition: .5s;
+}
+
+/*Graficos*/
+
+.contenido_graficos{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 30px;
+}
+.contenido_graficos .cajas{
+    border-radius: 20px;
+    text-align: center;
+    padding: 40px 50px;
+}
+.contenido_graficos .hoy{
+    border: 3px solid rgb(31, 109, 0);
+    color: #000;
+}
+.contenido_graficos .mañana{
+    border: 3px solid rgb(167, 8, 8);
+    color: #000;
+}
+.contenido_graficos .pasado{
+    border: 3px solid rgb(177, 100, 0);
+    color: #000;
+}
+.contenido_graficos .cajas h4{
+    font-size: 2rem;
+}
+.contenido_graficos .cajas p{
+    font-size: 1.2rem;
+    font-weight: 500;
+}
+
+/*Graficos numero 2*/
+.contenido_graficos2{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px,2fr));
+    grid-auto-rows: 120px;
+    padding: 10px;
+    gap: 30px;
+    
+}
+.contenido_graficos2 .cello{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/cello.jpg);
+}
+.contenido_graficos2 .copa{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/copa.jpg);
+}
+.contenido_graficos2 .oriente{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/oriente.jpg);
+}
+.contenido_graficos2 .tomahawk{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/tomahawk.jpg);
+}
+.contenido_graficos2 .ember{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/ember.jpg);
+}
+.contenido_graficos2 .saffron{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/graficos2.jpg);
+}
+.contenido_graficos2 .sands{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/restaurantes.jpg);
+}
+.contenido_graficos2 .haab{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/haab.jpg);
+}
+.contenido_graficos2 .latin{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/latin.jpg);
+}
+.contenido_graficos2 .noche{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(../img/noche.jpg);
+}
+.contenido_graficos2 .cajas{
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.19) 0px 10px 20px, rgba(0, 0, 0, 0.23) 0px 6px 6px;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+}
+.contenido_graficos2 .cajas p{
+    font-size: 20px;
+}
+
+@media (max-width: 1200px) {
+    .fecha{
+        font-size: 2.3rem;
+    }
+    .horario{
+        font-size: 2.3rem;
+    }
+}
+
+@media (max-width: 950px) {
+    .fecha{
+        font-size: 1.8rem;
+    }
+    .horario{
+        font-size: 1.8rem;
+    }
+    .contenedor_botones{
+        grid-template-columns:1fr 1fr ;
+        margin: 5rem 5rem 5rem 5rem ;
+    }
+}
+
+

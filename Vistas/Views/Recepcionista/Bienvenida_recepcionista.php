@@ -5,8 +5,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono de pestaña-->
+    <link rel="shortcut icon" href="../../img/logo.jpg" />
     <!--css de pagina de bienvenida.php-->
-    <link rel="stylesheet" href="../../css/bienvenida.css">
+    <link rel="stylesheet" href="../../css/Bienvenida_general.css">
     <!--Bootstrap V5-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <!--bx bx-icons-->
@@ -56,17 +58,24 @@
     <a href="Destinations.php" class="link destinations">
     <div class="titulos_href">
             <p>Destinations</p>
-            <span><?= $Generales['restaurantes']; ?></span>
+            <span><?= $Generales['destinations']; ?></span>
     </div>
     </a>
 
     <button type="submit" class="link graficos" data-bs-toggle="modal" data-bs-target="#graficas">
     <div class="titulos_href">
-            <p>Graficos</p>
+            <p>Total de Paxs</p>
             <span></span>
     </div>
     </button>
-        </div>
+
+    <button type="submit" class="link graficos2" data-bs-toggle="modal" data-bs-target="#graficas2">
+    <div class="titulos_href">
+            <p>Paxs por centro</p>
+            <span></span>
+    </div>
+    </button>
+</div>
 <!--Fin de botones-->
 
 <?php include('../Views_modals/Modal_graficos.php'); ?><!--Modal graficos-->

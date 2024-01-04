@@ -5,6 +5,9 @@ if(empty($_POST['editar_restaurante'])){
     echo 1;
 }
 else{
+session_start();
+$usuario_edita = $_SESSION['usuario'];
+
 $idreserva = $_REQUEST['idreserva'];
 $nombre_restaurante = $_POST['editar_restaurante'];
 $huesped = $_POST['editar_huesped'];
@@ -17,8 +20,9 @@ $fecha =$_POST['editar_fecha'];
 $horario =$_POST['editar_horario'];
 $comentarios =$_POST['editar_comentarios'];
 $solicitante =$_POST['editar_solicitante'];
+$creacion = $_POST['editar_creacion'];
 
-$editar_reservacion = $conexion->query("UPDATE reservas_restaurante SET nombre_restaurante = '$nombre_restaurante', huesped = '$huesped', apellidos = '$apellidos', villa = '$villa', propiedad = '$propiedad', numero_personas = '$no_personas', kids = '$no_kids',fecha_reserva = '$fecha', horario_reserva = '$horario', comentarios = '$comentarios', solicitante = '$solicitante' WHERE id_reserva_R = '$idreserva'");
+$editar_reservacion = $conexion->query("UPDATE reservas_restaurante SET nombre_restaurante = '$nombre_restaurante', huesped = '$huesped', apellidos = '$apellidos', villa = '$villa', propiedad = '$propiedad', numero_personas = '$no_personas', kids = '$no_kids',fecha_reserva = '$fecha', horario_reserva = '$horario', comentarios = '$comentarios', solicitante = '$solicitante', fecha_creacion = '$creacion', usuario_edita = '$usuario_edita' WHERE id_reserva_R = '$idreserva'");
 
 if($editar_reservacion){
     echo

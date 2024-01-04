@@ -13,12 +13,11 @@
         $('#editar_villa').val(datos_eventos[4]);
         $('#editar_propiedad').val(datos_eventos[5]);
         $('#editar_no_personas').val(datos_eventos[6]);
-        $('#editar_no_kids').val(datos_eventos[7]);
+        $('#editar_no_kids').val(datosevedatos_eventoss[7]);
         $('#editar_fecha').val(datos_eventos[8]);
         $('#editar_horario').val(datos_eventos[9]);
         $('#editar_comentarios').val(datos_eventos[10]);
         $('#editar_solicitante').val(datos_eventos[11]);
-        $('#editar_telefono').val(datos_eventos[12]);
     });
     
     document.getElementById('editar_info_evento').addEventListener('submit', function(e){//mandamos a llamar al formulario por ID y le añadimos un evento de tipo submit

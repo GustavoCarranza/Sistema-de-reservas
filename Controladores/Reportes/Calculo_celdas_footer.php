@@ -127,8 +127,8 @@ class PDF_MC_Table extends FPDF
         $this->SetFont('Arial', '', 8);
         $this->SetTextColor(0, 0, 0);
         $this->SetX(10);
-        $this->Write(8, utf8_decode('Sistema de reservaciones Banyan Tree mayakoba, Creado © Gustavo Carranza Rivera'));
-        $this->Ln();
+        $this->Write(8, utf8_decode('Sistema de reservaciones Banyan Tree mayakoba' . ' '.date('Y'). '© Developer Gustavo Carranza Rivera'));
+        $this->Ln(); 
 
     }
 

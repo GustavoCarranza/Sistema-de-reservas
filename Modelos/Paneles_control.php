@@ -19,3 +19,14 @@ include('Base/base_datos.php');
      mysqli_close($conexion);
  }
 ?>
+
+<?php
+include('Base/base_datos.php');
+ //Contadores generales por centro de consumo
+ $contador_general_centro = mysqli_query($conexion, "CALL Contadores_centros_consumo();");
+ $resultado_general_centro =mysqli_num_rows($contador_general_centro);
+ if($resultado_general_centro > 0){
+     $General_X_centro_consumo = mysqli_fetch_assoc($contador_general_centro);
+     mysqli_close($conexion);
+ }
+?>

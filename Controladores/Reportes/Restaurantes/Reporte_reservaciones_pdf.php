@@ -1,4 +1,6 @@
 <?php
+
+
 require('../Calculo_celdas_footer.php');
 include('../../../Modelos/Base/base_datos.php');
 date_default_timezone_set('America/Cancun');

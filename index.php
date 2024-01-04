@@ -17,6 +17,8 @@ else if (isset($_SESSION['usuario']) && $_SESSION['rol'] == 3){
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Icono de pestaña-->
+    <link rel="shortcut icon" href="Vistas/img/logo.jpg" />
     <!--Css-->
     <link rel="stylesheet" href="Vistas/css/loginn.css">
     <!--Bootstrap V5-->
@@ -51,7 +53,7 @@ else if (isset($_SESSION['usuario']) && $_SESSION['rol'] == 3){
     <footer>
         <div class="contenido_footer">
             <h3>Sistema de reservaciones de restaurante Banyan Tree Mayakoba</h3>
-            <p>Copyright 2023 &#9400 Developed by Gustavo Carranza Rivera </p>
+            <p>Copyright <?php echo date('Y') ?> &#9400 Developed by Gustavo Carranza Rivera </p>
         </div>
     </footer>
     <!--Fin de Footer-->
